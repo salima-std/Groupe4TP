@@ -1,0 +1,48 @@
+RewriteEngine On
+
+RewriteRule ^accueil$ accueil.php
+RewriteRule ^actualite$ actualite.php
+RewriteRule ^agent$ agent.php
+RewriteRule ^conseil$ conseil.php
+RewriteRule ^conversation$ conversation.php
+RewriteRule ^index$ index.php
+RewriteRule ^indexFaux$ indexFaux.php
+RewriteRule ^protection$ protection.php
+RewriteRule ^province$ province.php
+RewriteRule ^repQuest$ repQuest.php
+RewriteRule ^utilisateur$ utilisateur.php
+
+RewriteRule ^UpdateActualite/([a-z0-9-]+)-([0-9]+)$ UpdateActualite.php?ID_ACTUALITE
+RewriteRule ^UpdateAgent/([a-z0-9-]+)-([0-9]+)$ UpdateAgent.php?ID_AGENT
+RewriteRule ^UpdateConseil/([a-z0-9-]+)-([0-9]+)$ UpdateConseil.php?ID_CONSEIL
+RewriteRule ^UpdateProtection/([a-z0-9-]+)-([0-9]+)$ UpdateProtection.php?ID_PROTEGEZ_VOUS
+RewriteRule ^UpdateProvince/([a-z0-9-]+)-([0-9]+)$ UpdateProvince.php?ID_PROVINCE
+RewriteRule ^UpdateRepQuest/([a-z0-9-]+)-([0-9]+)$ UpdateRepQuest.php?ID_Q_R
+
+RewriteRule ^DeleteActualite/([a-z0-9-]+)-([0-9]+)$ DeleteActualite.php?ID_ACTUALITE
+RewriteRule ^DeleteAgent/([a-z0-9-]+)-([0-9]+)$ DeleteAgent.php?ID_AGENT
+RewriteRule ^DeleteConseil/([a-z0-9-]+)-([0-9]+)$ DeleteConseil.php?ID_CONSEIL
+RewriteRule ^DeleteProtection/([a-z0-9-]+)-([0-9]+)$ DeleteProtection.php?ID_PROTEGEZ_VOUS
+RewriteRule ^DeleteRepQuest/([a-z0-9-]+)-([0-9]+)$ DeleteRepQuest.php?ID_Q_R
+RewriteRule ^DeleteUtilisateur/([a-z0-9-]+)-([0-9]+)$ DeleteUtilisateur.php?ID_AGENT
+
+RewriteRule ^addActualite$ addActualite.php
+RewriteRule ^addAgent$ addAgent.php
+RewriteRule ^addConseil$ addConseil.php
+RewriteRule ^addProtection$ addProtection.php
+RewriteRule ^addProvince$ addProvince.php
+RewriteRule ^addRepQuest$ addRepQuest.php
+RewriteRule ^addUtilisateur$ addUtilisateur.php
+
+RewriteRule ^connexion$ connexion.php
+RewriteRule ^delConversation$ delConversation.php
+RewriteRule ^login$ login.php
+
+RewriteRule ^PrioriteActualite/([a-z0-9-]+)-([0-9]+)$ PrioriteActualite.php?ID_ACTUALITE
+RewriteRule ^PrioriteConseil/([a-z0-9-]+)-([0-9]+)$ PrioriteConseil.php?ID_CONSEIL
+RewriteRule ^PrioriteProtection/([a-z0-9-]+)-([0-9]+)$ PrioriteProtection.php?ID_PROTEGEZ_VOUS
+RewriteRule ^PrioriteRepQuest/([a-z0-9-]+)-([0-9]+)$ PrioriteRepQuest.php?ID_Q_R
+
+RewriteRule ^inde$ index.php
+RewriteRule ^Op$ Op.php
+RewriteRule ^article/([a-z0-9-]+)-([0-9]+)$ article.php?titre=$1&id=$2
